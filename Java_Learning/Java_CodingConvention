@@ -1,0 +1,100 @@
+Java coding convention is mandatory for pre-defined 
+java class, interface, method, variable, package and constant but optional for user defined......
+
+Class: Always camel case: eg: String, StringBuffer, InputStreamReader
+Interface: Always camel case: eg: Serialization, RandomAccess
+Methods: Mix case convention: push(), charAt(), toUpperCase()
+Variables:Mix case convention: Always start with lower case: out, pageConstext
+Package: all words will be lower case: java.lang, java.util, java.aws
+Constant: All letters will be upper case MAX_PRIORITY, MIN_PRIORITY
+
+Identifier: 
+
+class Test{
+	int eid = 111;
+	void m1(){}
+	Test(){}
+}
+
+1. a-z  A-Z  0-9  _ $  but should not start with numbers
+	eg: int abcd123 = 10; --->> Valid
+	    int _$123 = 20; ----->> Valid
+	    int 1234abc = 30; --->> Invalid bcz var name starts with number
+	    int _name = 40; ----->> Valid
+	    int _$ = 50; -------->> Valid
+	    int abc.123 = 60; --->> Invalid (Special characters(. , % @ # * & ! etc) are not allowed)
+	    
+2. Not possible pre-defined keywords as identifier
+	eg:
+	int if = 10; // will give compilation error
+	
+3. It is possible to use class name and interface name as identifier but it's not recommended.
+	eg: 
+	int String = 10; // will not give error but not recommended to write like this.
+	
+4. No length linmit but always recommend to take less than 16 characters.
+
+5. Identifier is also case sensitive.
+	eg: 
+	int Number = 10;
+	int NUmber = 10;
+	int NUMber = 10;
+	int NUMBer = 10;
+	here all variable are different.	
+	
+Token: Space between two words called as token.
+Here any space can be allow between two token.
+	eg: 	class         Test{
+	int         eid =          111;
+	void
+	
+	
+	 m1(){}
+	Test
+	
+	(){}
+}
+	
+Comment:  It is used to give brief description about the logic or code	
+types: 
+1. SingleLine
+2. MultiLine
+3. Documentary
+
+# Java oops concept: This is a methodologies by using of which we are achieving project requirements
+1. Class
+2. Object
+3. Inheritance
+4. Polymorphism
+5. Abstraction
+6. Encapsulation
+
+==>> Object creation during inheritance concepts:
+Class Parent{
+	void m1(){}
+}
+Class Child{
+	void m1(){}
+}
+eg: Parent p = new Child();
+	p.m1();
+    Parent class execution: Compile time
+    Child class execution: Runtime
+    
+Modifiers:
+Public: Applicable for variables, methods, classes
+		Can Access any package
+Protected: Applicable for variables and methods
+		Can Access within package and outside of the package using parent-child relationship
+Private: Applicable for variables and methods
+		Can Access within class
+Default: Applicable for variables, methods, classes
+		Can Access within package
+	
+	
+	
+	
+	
+	
+	
+	    
